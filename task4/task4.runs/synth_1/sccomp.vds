@@ -1,0 +1,581 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Dec 22 19:25:09 2023
+# Process ID: 11236
+# Current directory: E:/mydownload/vivado/vivadofiles/task4/task4.runs/synth_1
+# Command line: vivado.exe -log sccomp.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sccomp.tcl
+# Log file: E:/mydownload/vivado/vivadofiles/task4/task4.runs/synth_1/sccomp.vds
+# Journal file: E:/mydownload/vivado/vivadofiles/task4/task4.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source sccomp.tcl -notrace
+Command: synth_design -top sccomp -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11004 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 392.344 ; gain = 100.074
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'sccomp' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:56]
+	Parameter IM_CODE_NUM bound to: 19 - type: integer 
+INFO: [Synth 8-6085] Hierarchical reference on 'rf' stops possible memory inference [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:420]
+INFO: [Synth 8-6085] Hierarchical reference on 'dmem' stops possible memory inference [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:347]
+WARNING: [Synth 8-567] referenced signal 'rf' should be on the sensitivity list [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:79]
+WARNING: [Synth 8-567] referenced signal 'dmem' should be on the sensitivity list [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:79]
+WARNING: [Synth 8-567] referenced signal 'instr' should be on the sensitivity list [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:86]
+WARNING: [Synth 8-567] referenced signal 'reg_addr' should be on the sensitivity list [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:86]
+WARNING: [Synth 8-567] referenced signal 'reg_data' should be on the sensitivity list [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:86]
+WARNING: [Synth 8-567] referenced signal 'dmem_addr' should be on the sensitivity list [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:86]
+WARNING: [Synth 8-567] referenced signal 'dmem_data' should be on the sensitivity list [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:86]
+INFO: [Synth 8-6157] synthesizing module 'dist_mem_gen_0' [E:/mydownload/vivado/vivadofiles/task4/task4.runs/synth_1/.Xil/Vivado-11236-hefeng/realtime/dist_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dist_mem_gen_0' (1#1) [E:/mydownload/vivado/vivadofiles/task4/task4.runs/synth_1/.Xil/Vivado-11236-hefeng/realtime/dist_mem_gen_0_stub.v:6]
+WARNING: [Synth 8-689] width (32) of port connection 'a' does not match port width (6) of module 'dist_mem_gen_0' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:96]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:107]
+INFO: [Synth 8-6157] synthesizing module 'ctrl' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:249]
+INFO: [Synth 8-6155] done synthesizing module 'ctrl' (2#1) [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:249]
+INFO: [Synth 8-6157] synthesizing module 'EXT' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:441]
+INFO: [Synth 8-6155] done synthesizing module 'EXT' (3#1) [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:441]
+WARNING: [Synth 8-350] instance 'U_EXT' of module 'EXT' requires 8 connections, but only 6 given [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:187]
+INFO: [Synth 8-6157] synthesizing module 'RF' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:411]
+INFO: [Synth 8-6155] done synthesizing module 'RF' (4#1) [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:411]
+INFO: [Synth 8-6157] synthesizing module 'alu' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:384]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (5#1) [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:384]
+WARNING: [Synth 8-689] width (1) of port connection 'Zero' does not match port width (8) of module 'alu' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:221]
+INFO: [Synth 8-6157] synthesizing module 'dm' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:337]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:360]
+INFO: [Synth 8-155] case statement is not full and has no default [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:377]
+INFO: [Synth 8-6155] done synthesizing module 'dm' (6#1) [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:337]
+WARNING: [Synth 8-689] width (32) of port connection 'addr' does not match port width (6) of module 'dm' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:229]
+INFO: [Synth 8-6157] synthesizing module 'seg7x16' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:464]
+INFO: [Synth 8-6155] done synthesizing module 'seg7x16' (7#1) [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:464]
+WARNING: [Synth 8-3936] Found unconnected internal register 'reg_addr_reg' and it is trimmed from '5' to '4' bits. [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:80]
+WARNING: [Synth 8-3936] Found unconnected internal register 'dmem_addr_reg' and it is trimmed from '5' to '4' bits. [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:81]
+WARNING: [Synth 8-3936] Found unconnected internal register 'reg_data_reg' and it is trimmed from '32' to '28' bits. [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:82]
+WARNING: [Synth 8-3936] Found unconnected internal register 'dmem_data_reg' and it is trimmed from '32' to '28' bits. [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:83]
+WARNING: [Synth 8-5788] Register rom_addr_reg in module sccomp is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:96]
+INFO: [Synth 8-6155] done synthesizing module 'sccomp' (8#1) [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:56]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[14]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[0]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[14]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[0]
+WARNING: [Synth 8-3331] design ctrl has unconnected port DMType[2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 452.492 ; gain = 160.223
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:iimm_shamt[4] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:iimm_shamt[3] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:iimm_shamt[2] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:iimm_shamt[1] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:iimm_shamt[0] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[19] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[18] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[17] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[16] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[15] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[14] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[13] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[12] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[11] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[10] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[9] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[8] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[7] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[6] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[5] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[4] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[3] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[2] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[1] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+WARNING: [Synth 8-3295] tying undriven pin U_EXT:uimm[0] to constant 0 [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:171]
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 452.492 ; gain = 160.223
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 452.492 ; gain = 160.223
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'U_IM'
+Finished Parsing XDC File [e:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/ip/dist_mem_gen_0/dist_mem_gen_0/dist_mem_gen_0_in_context.xdc] for cell 'U_IM'
+Parsing XDC File [D:/workspacce/文本/大二上/icf.xdc]
+WARNING: [Vivado 12-507] No nets matched 'sw_i_IBUF[15]'. [D:/workspacce/文本/大二上/icf.xdc:5]
+WARNING: [Vivado 12-507] No nets matched 'BTNC_IBUF'. [D:/workspacce/文本/大二上/icf.xdc:6]
+WARNING: [Vivado 12-584] No ports matched 'led_o[0]'. [D:/workspacce/文本/大二上/icf.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'led_o[1]'. [D:/workspacce/文本/大二上/icf.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'led_o[2]'. [D:/workspacce/文本/大二上/icf.xdc:49]
+WARNING: [Vivado 12-584] No ports matched 'led_o[3]'. [D:/workspacce/文本/大二上/icf.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'led_o[4]'. [D:/workspacce/文本/大二上/icf.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'led_o[5]'. [D:/workspacce/文本/大二上/icf.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'led_o[6]'. [D:/workspacce/文本/大二上/icf.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'led_o[7]'. [D:/workspacce/文本/大二上/icf.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'led_o[8]'. [D:/workspacce/文本/大二上/icf.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'led_o[9]'. [D:/workspacce/文本/大二上/icf.xdc:56]
+WARNING: [Vivado 12-584] No ports matched 'led_o[10]'. [D:/workspacce/文本/大二上/icf.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'led_o[11]'. [D:/workspacce/文本/大二上/icf.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'led_o[12]'. [D:/workspacce/文本/大二上/icf.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'led_o[13]'. [D:/workspacce/文本/大二上/icf.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'led_o[14]'. [D:/workspacce/文本/大二上/icf.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'led_o[15]'. [D:/workspacce/文本/大二上/icf.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'CPU_RESETN'. [D:/workspacce/文本/大二上/icf.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'BTNC'. [D:/workspacce/文本/大二上/icf.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'BTNU'. [D:/workspacce/文本/大二上/icf.xdc:68]
+WARNING: [Vivado 12-584] No ports matched 'BTNL'. [D:/workspacce/文本/大二上/icf.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'BTNR'. [D:/workspacce/文本/大二上/icf.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'BTND'. [D:/workspacce/文本/大二上/icf.xdc:71]
+Finished Parsing XDC File [D:/workspacce/文本/大二上/icf.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [D:/workspacce/文本/大二上/icf.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/sccomp_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/workspacce/文本/大二上/icf.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/sccomp_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/sccomp_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 817.555 ; gain = 0.000
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 817.625 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 817.625 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 817.625 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 817.625 ; gain = 525.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 817.625 ; gain = 525.355
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U_IM. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 817.625 ; gain = 525.355
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:397]
+INFO: [Synth 8-5545] ROM "Zero0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "dout" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5587] ROM size for "o_seg_r" is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-327] inferring latch for variable 'dout_reg' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:378]
+WARNING: [Synth 8-327] inferring latch for variable 'display_data_reg' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:87]
+WARNING: [Synth 8-327] inferring latch for variable 'WD_reg' [E:/mydownload/vivado/vivadofiles/task4/task4.srcs/sources_1/new/test.v:188]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:17 . Memory (MB): peak = 817.625 ; gain = 525.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	               32 Bit    Registers := 33    
+	                8 Bit    Registers := 33    
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 43    
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 173   
+	   4 Input      8 Bit        Muxes := 32    
+	   3 Input      8 Bit        Muxes := 11    
+	  18 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   4 Input      1 Bit        Muxes := 2     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sccomp 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 4     
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   5 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module RF 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 32    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 39    
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   6 Input     32 Bit        Muxes := 1     
+	   4 Input     32 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module dm 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 32    
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 172   
+	   4 Input      8 Bit        Muxes := 32    
+	   3 Input      8 Bit        Muxes := 11    
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module seg7x16 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  18 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "Zero0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[14]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design dm has unconnected port sw_i[0]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[15]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[14]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[13]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[12]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[11]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[10]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[9]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[8]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[7]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[6]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[5]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[4]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[3]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[2]
+WARNING: [Synth 8-3331] design RF has unconnected port sw_i[0]
+WARNING: [Synth 8-3331] design ctrl has unconnected port DMType[2]
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[62]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[54]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[46]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[38]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[61]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[53]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[45]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[37]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[60]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[52]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[44]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[36]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[57]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[49]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[41]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[33]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[59]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[51]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[43]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[35]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[56]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[48]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[40]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[32]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[58]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[50]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[42]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[34]' (FDC) to 'u_seg7x16/i_data_store_reg[63]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[63]' (FDC) to 'u_seg7x16/i_data_store_reg[55]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[55]' (FDC) to 'u_seg7x16/i_data_store_reg[47]'
+INFO: [Synth 8-3886] merging instance 'u_seg7x16/i_data_store_reg[47]' (FDC) to 'u_seg7x16/i_data_store_reg[39]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_seg7x16/\i_data_store_reg[39] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:45 . Memory (MB): peak = 833.137 ; gain = 540.867
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:33 ; elapsed = 00:00:54 . Memory (MB): peak = 833.137 ; gain = 540.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:57 . Memory (MB): peak = 843.965 ; gain = 551.695
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[31]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[30]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[29]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[28]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[27]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[26]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[25]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[24]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[23]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[22]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[21]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[20]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[19]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[18]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[17]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[16]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[15]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[14]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[13]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[12]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[11]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[10]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[9]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[8]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[7]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[6]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[5]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[4]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[3]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[2]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[1]) is unused and will be removed from module sccomp.
+WARNING: [Synth 8-3332] Sequential element (U_DM/dout_reg[0]) is unused and will be removed from module sccomp.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:01:00 . Memory (MB): peak = 1029.781 ; gain = 737.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:38 ; elapsed = 00:01:01 . Memory (MB): peak = 1029.781 ; gain = 737.512
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:38 ; elapsed = 00:01:01 . Memory (MB): peak = 1029.781 ; gain = 737.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 1029.781 ; gain = 737.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 1029.781 ; gain = 737.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 1029.781 ; gain = 737.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 1029.781 ; gain = 737.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------+----------+
+|      |BlackBox name  |Instances |
++------+---------------+----------+
+|1     |dist_mem_gen_0 |         1|
++------+---------------+----------+
+
+Report Cell Usage: 
++------+---------------+------+
+|      |Cell           |Count |
++------+---------------+------+
+|1     |dist_mem_gen_0 |     1|
+|2     |BUFG           |     4|
+|3     |CARRY4         |    35|
+|4     |LUT1           |    15|
+|5     |LUT2           |   261|
+|6     |LUT3           |   408|
+|7     |LUT4           |   405|
+|8     |LUT5           |   348|
+|9     |LUT6           |  2723|
+|10    |MUXF7          |   328|
+|11    |MUXF8          |    80|
+|12    |FDCE           |  1228|
+|13    |FDPE           |   168|
+|14    |LD             |    64|
+|15    |IBUF           |    12|
+|16    |OBUF           |    16|
++------+---------------+------+
+
+Report Instance Areas: 
++------+------------+--------+------+
+|      |Instance    |Module  |Cells |
++------+------------+--------+------+
+|1     |top         |        |  6127|
+|2     |  U_DM      |dm      |   307|
+|3     |  U_EXT     |EXT     |  1926|
+|4     |  U_RF      |RF      |  3268|
+|5     |  u_seg7x16 |seg7x16 |   114|
++------+------------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 1029.781 ; gain = 737.512
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 66 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:56 . Memory (MB): peak = 1029.781 ; gain = 372.379
+Synthesis Optimization Complete : Time (s): cpu = 00:00:38 ; elapsed = 00:01:02 . Memory (MB): peak = 1029.781 ; gain = 737.512
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 507 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1029.781 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 64 instances were transformed.
+  LD => LDCE: 64 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+71 Infos, 163 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:06 . Memory (MB): peak = 1029.781 ; gain = 749.016
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1029.781 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'E:/mydownload/vivado/vivadofiles/task4/task4.runs/synth_1/sccomp.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file sccomp_utilization_synth.rpt -pb sccomp_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 22 19:26:22 2023...

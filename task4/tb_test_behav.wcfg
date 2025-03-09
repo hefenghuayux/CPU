@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_test_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_test" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="30842880000fs"></ZoomStartTime>
+      <ZoomEndTime time="155242880001fs"></ZoomEndTime>
+      <Cursor1Time time="65842880000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="105"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="28" />
+   <wvobject fp_name="/tb_test/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/rstn" type="logic">
+      <obj_property name="ElementShortName">rstn</obj_property>
+      <obj_property name="ObjectShortName">rstn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/sw_i" type="array">
+      <obj_property name="ElementShortName">sw_i[15:0]</obj_property>
+      <obj_property name="ObjectShortName">sw_i[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/disp_an_o" type="array">
+      <obj_property name="ElementShortName">disp_an_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">disp_an_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/disp_seg_o" type="array">
+      <obj_property name="ElementShortName">disp_seg_o[7:0]</obj_property>
+      <obj_property name="ObjectShortName">disp_seg_o[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/T" type="array">
+      <obj_property name="ElementShortName">T[31:0]</obj_property>
+      <obj_property name="ObjectShortName">T[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_DM/dmem" type="array">
+      <obj_property name="ElementShortName">dmem[31:0][7:0]</obj_property>
+      <obj_property name="ObjectShortName">dmem[31:0][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_IM/inst/spo" type="array">
+      <obj_property name="ElementShortName">spo[31:0]</obj_property>
+      <obj_property name="ObjectShortName">spo[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_RF/rf" type="array">
+      <obj_property name="ElementShortName">rf[31:0][31:0]</obj_property>
+      <obj_property name="ObjectShortName">rf[31:0][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_alu/C" type="array">
+      <obj_property name="ElementShortName">C[31:0]</obj_property>
+      <obj_property name="ObjectShortName">C[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_RF/A1" type="array">
+      <obj_property name="ElementShortName">A1[4:0]</obj_property>
+      <obj_property name="ObjectShortName">A1[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_RF/A2" type="array">
+      <obj_property name="ElementShortName">A2[4:0]</obj_property>
+      <obj_property name="ObjectShortName">A2[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_RF/A3" type="array">
+      <obj_property name="ElementShortName">A3[4:0]</obj_property>
+      <obj_property name="ObjectShortName">A3[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_CTRL/Funct3" type="array">
+      <obj_property name="ElementShortName">Funct3[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Funct3[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_CTRL/ALUOp" type="array">
+      <obj_property name="ElementShortName">ALUOp[4:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUOp[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_CTRL/Op" type="array">
+      <obj_property name="ElementShortName">Op[6:0]</obj_property>
+      <obj_property name="ObjectShortName">Op[6:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_EXT/bimm" type="array">
+      <obj_property name="ElementShortName">bimm[11:0]</obj_property>
+      <obj_property name="ObjectShortName">bimm[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_EXT/iimm" type="array">
+      <obj_property name="ElementShortName">iimm[11:0]</obj_property>
+      <obj_property name="ObjectShortName">iimm[11:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_EXT/EXTOp" type="array">
+      <obj_property name="ElementShortName">EXTOp[5:0]</obj_property>
+      <obj_property name="ObjectShortName">EXTOp[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_IM/inst/a" type="array">
+      <obj_property name="ElementShortName">a[5:0]</obj_property>
+      <obj_property name="ObjectShortName">a[5:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_EXT/immout" type="array">
+      <obj_property name="ElementShortName">immout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">immout[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_CTRL/sb_beq" type="logic">
+      <obj_property name="ElementShortName">sb_beq</obj_property>
+      <obj_property name="ObjectShortName">sb_beq</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_CTRL/sbtype" type="logic">
+      <obj_property name="ElementShortName">sbtype</obj_property>
+      <obj_property name="ObjectShortName">sbtype</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_CTRL/WDSel" type="array">
+      <obj_property name="ElementShortName">WDSel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">WDSel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/addr" type="array">
+      <obj_property name="ElementShortName">addr[4:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_RF/WD" type="array">
+      <obj_property name="ElementShortName">WD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/WD" type="array">
+      <obj_property name="ElementShortName">WD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_test/t_sccomp/U_CTRL/NPCOp" type="array">
+      <obj_property name="ElementShortName">NPCOp[2:0]</obj_property>
+      <obj_property name="ObjectShortName">NPCOp[2:0]</obj_property>
+   </wvobject>
+</wave_config>
